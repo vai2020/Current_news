@@ -1,3 +1,55 @@
+Mod 2 Project: Newsapp API
+
+Which 3rd party API I'm using
+
+
+Problem statement (which problem I am trying to solve)
+An App that link to current CNN news.   
+
+Target users (who are the people who's problem I'm trying to solve)
+People who don't own a TV but own a phone or those who are too busy to get the news elsewhere
+
+Wireframe
+In your wireframe/drawings we want to see you actually write out which components are stateful and which aren't
+2 Stateful components 5 functional components (presentational components / no stateful logic)
+
+users signup form (stateful) -> confirmation box/lightboxes/modal (functional/presentational)
+
+2 Stateful components:
+1) App.js (stateful) -> 
+2) TBD
+
+5 Functional components:
+1) Confirmation.js (stateless) -> 
+2) TBD
+3) TBD
+4) TBD
+5) TBD
+
+Lets say once they confirm their info I take them to another page. And show them
+
+App.js is stateful because it has to make an API call and then render the info from API call
+
+News (presentational)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**************************************************************************
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
