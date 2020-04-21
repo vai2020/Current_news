@@ -4,7 +4,7 @@ Which 3rd party API I'm using
 
 
 Problem statement (which problem I am trying to solve)
-An App that link to current CNN news.   
+An App that link to current news.   
 
 Target users (who are the people who's problem I'm trying to solve)
 People who don't own a TV but own a phone or those who are too busy to get the news elsewhere
