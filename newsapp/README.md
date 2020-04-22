@@ -27,7 +27,9 @@ Wireframe:
 
 App.js is stateful because it has to make an API call and then render the info from API call
 
-https://github.com/vai2020/Current_news/issues/1
+![wireframe](Images/Updatedwireframe.jpg)
+
+
 
 
 
