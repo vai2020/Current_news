@@ -18,11 +18,11 @@ Wireframe:
 2) User_profile.js (sign-in)
 
 5 Functional components (stateless):
-1) User_display.js
-2) Date.js
-3) Headline.js
-4) Content.js
-5) Search.js
+1) Us.js
+2) World.js
+3) Headline_news.js
+4) Comment.js
+5) Footer.js
 
 Once user confirms his/her info, they will go to second page.
 
