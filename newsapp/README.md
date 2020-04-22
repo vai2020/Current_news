@@ -28,6 +28,8 @@ Once user confirms his/her info, they will go to second page.
 
 App.js is stateful because it has to make an API call and then render the info from API call
 
+Wireframe: https://docs.google.com/document/d/1ONfSH6h1aG4-oXZxsl_PBf9ESp41ujSTFy-Jzd1A-S8/edit
+
 
 
 
