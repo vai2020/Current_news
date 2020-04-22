@@ -1,36 +1,39 @@
-Mod 2 Project: Newsapp API
+Mod 2 Project: Newsapp 
 
-Which 3rd party API I'm using
+Which 3rd party API I'm using:
+https://newsapi.org
 
 
-Problem statement (which problem I am trying to solve)
-An App that link to current news.   
+Problem statement (which problem I am trying to solve):
+Our world is changing constantly.  How do you keep up?  
 
-Target users (who are the people who's problem I'm trying to solve)
-People who don't own a TV but own a phone or those who are too busy to get the news elsewhere
+Target users (who are the people who's problem I'm trying to solve):
+Anyone who wants to get access to latest news from an app. For example: people who don't own a TV.  People who are in transit......
 
-Wireframe
-In your wireframe/drawings we want to see you actually write out which components are stateful and which aren't
-2 Stateful components 5 functional components (presentational components / no stateful logic)
+Wireframe:
+2 Stateful components 5 Functional components (presentational components / no stateful logic)
 
-users signup form (stateful) -> confirmation box/lightboxes/modal (functional/presentational)
+2 Class components (staeful):
+1) App.js
+2) User_profile.js (sign-in)
 
-2 Stateful components:
-1) App.js (stateful) -> 
-2) TBD
+5 Functional components (stateless):
+1) User_display.js
+2) Date.js
+3) Headline.js
+4) Content.js
+5) Search.js
 
-5 Functional components:
-1) Confirmation.js (stateless) -> 
-2) TBD
-3) TBD
-4) TBD
-5) TBD
-
-Lets say once they confirm their info I take them to another page. And show them
+Once user confirms his/her info, they will go to second page.
 
 App.js is stateful because it has to make an API call and then render the info from API call
 
-News (presentational)
+
+
+
+
+  
+
 
 
 
