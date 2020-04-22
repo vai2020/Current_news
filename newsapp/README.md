@@ -5,17 +5,17 @@ https://newsapi.org
 
 
 Problem statement (which problem I am trying to solve):
-Our world is changing constantly.  How do you keep up?  
+Our world is constantly changing.  How do you keep up? This newsapp helps people to gain access to google news which is an aggregator of news from different sources. 
 
 Target users (who are the people who's problem I'm trying to solve):
-Anyone who wants to get access to latest news from an app. For example: people who don't own a TV.  People who are in transit......
+Anyone who wants to get access to latest news from an app. For example: people who don't own a TV or radio.  People who are in transit......
 
 Wireframe:
 2 Stateful components 5 Functional components (presentational components / no stateful logic)
 
 2 Class components (staeful):
 1) App.js
-2) User_profile.js (sign-in)
+2) Header.js
 
 5 Functional components (stateless):
 1) Us.js
@@ -24,7 +24,6 @@ Wireframe:
 4) Comment.js
 5) Footer.js
 
-Once user confirms his/her info, they will go to second page.
 
 App.js is stateful because it has to make an API call and then render the info from API call
 
