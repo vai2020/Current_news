@@ -4,7 +4,7 @@ function Footer () {
     return (
       <div>
         
-        <p> Testing on footer</p>
+        <p>Thank you for visiting our site. Disclaimer: all data obtained from Google News database and subject to change without notice. Errors and omissions excepted.</p>
   
       </div>
     );
