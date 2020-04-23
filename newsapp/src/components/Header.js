@@ -1,15 +1,15 @@
 import React from 'react';
 
 
-function App() {
+function Header() {
     return (
-      <div className="App">
+      <div>
         
-     <h1> test on May, 2020</h1>
+        <p>Today is a good day</p>
   
       </div>
     );
   }
   
-  export default Header;
+  export default Header
   
