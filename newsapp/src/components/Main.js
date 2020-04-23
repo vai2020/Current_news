@@ -1,14 +1,14 @@
 import React from 'react';
 
-function App() {
+function Main () {
     return (
-      <div className="App">
+      <div>
         
-    
+        <p> Today is Thursday</p>
   
       </div>
     );
   }
   
-  export default Main;
+  export default Main
   
