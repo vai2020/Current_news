@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from "axios";
 import Header from "./components/Header";
-import Main from "./components/Main"
+import Main from "./components/Main";
+import Us from "./components/Us";
+
+
 
 function App() {
   return (
@@ -10,6 +13,7 @@ function App() {
       
    <Header />
    <Main />
+   <Us />
 
     </div>
   );
