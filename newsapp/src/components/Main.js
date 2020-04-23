@@ -4,7 +4,7 @@ function Main () {
     return (
       <div>
         
-        <p> Today is Thursday</p>
+        <p> Second test - Today is Thursday</p>
   
       </div>
     );

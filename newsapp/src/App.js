@@ -7,18 +7,40 @@ import Us from "./components/Us";
 import World from "./components/World"
 import Footer from "./components/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      
-   <Header />
-   <Main />
-   <Us />
-   <World />
-   <Footer />
 
-    </div>
-  );
+/* Using the functional component to test
+// function App() {
+//   return (
+//     <div className="App">
+      
+//    <Header />
+//    <Main />
+//    <Us />
+//    <World />
+//    <Footer />
+
+//     </div>
+//   );
+// } */
+
+class App extends React.Component {
+  render() {
+      return (
+          <div>
+              <Header />
+              <Main />
+               <Us />
+               <World />
+
+
+          </div>
+      )
+  }
 }
 
+
 export default App;
+
+
+
+

@@ -4,8 +4,8 @@ import React from 'react';
 function Header() {
     return (
       <div>
-        
-        <p>Today is a good day</p>
+    
+        <h1>Google News App</h1>
   
       </div>
     );
