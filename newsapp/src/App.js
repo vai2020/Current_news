@@ -4,8 +4,8 @@ import axios from "axios";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Us from "./components/Us";
-
-
+import World from "./components/World"
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +14,8 @@ function App() {
    <Header />
    <Main />
    <Us />
+   <World />
+   <Footer />
 
     </div>
   );
