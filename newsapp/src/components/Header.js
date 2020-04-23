@@ -5,7 +5,7 @@ function Header() {
     return (
       <div>
     
-        <h1>Google News App</h1>
+        <h1 className="header"> Google News App</h1>
   
       </div>
     );
