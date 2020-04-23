@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Us from "./components/Us";
 import World from "./components/World"
+import Comments from "./components/Comments";
 import Footer from "./components/Footer";
 
 
@@ -31,6 +32,7 @@ class App extends React.Component {
               <Main />
                <Us />
                <World />
+               <Comments />
                <Footer />
 
 
