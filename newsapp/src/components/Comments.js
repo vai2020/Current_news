@@ -5,7 +5,7 @@ function Comments () {
     return (
       <div>
         
-        <p> Comments: </p>
+        <p className="comments"> Comments: </p>
   
       </div>
     );
