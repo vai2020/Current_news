@@ -24,16 +24,18 @@ code {
   font-size: 150px;
   color: black;
   font-weight: bold;
-  display: inline;
-  margin: 30%;
+  display: flex;
+  justify-items: center;
 }
 
 .US {
   font-size: 90px;
   font-weight: bold;
+  justify-content: center;
 }
 
 .World {
   font-size: 90px;
-  font-size: 90px;
+  font-weight: bold;
+
 }
