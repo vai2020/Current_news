@@ -34,8 +34,8 @@ class App extends Component {
               <div> <Us /> </div>
                <div> <World /> </div>
                <div> <Main /> </div>
-               <Comments />
-               <Footer />
+               <div> <Comments /> </div>
+               <div> <Footer /> </div>
 
 
           </div>
