@@ -38,11 +38,24 @@ class App extends Component {
                <div> <Comments /> </div>
                <div> <Footer /> </div>
 
+        <nav>
+        <Link to="/">US News</Link>
+        <Link to="/">World News</Link>
+
+
+
+
+
+        </nav>
+
+
 
           </div>
       )
   }
 }
+
+
 
 
 export default App;
