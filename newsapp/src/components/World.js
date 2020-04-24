@@ -4,7 +4,7 @@ function World () {
     return (
       <div>
         
-        <p> World News</p>
+        <p className="World"> World News</p>
   
       </div>
     );
