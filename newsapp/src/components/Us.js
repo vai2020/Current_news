@@ -4,7 +4,7 @@ function Us () {
     return (
       <div>
         
-        <p> US News</p>
+        <p className="US"> US News</p>
   
       </div>
     );
