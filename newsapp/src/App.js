@@ -30,7 +30,7 @@ class App extends Component {
   render() {
       return (
           <div>
-              <Header />
+              <div><Header /></div>
               <Main />
                <Us />
                <World />
