@@ -47,6 +47,7 @@ class App extends Component {
 
         <switch>
         <Route path="/US" component={Us}  />
+        <Route path="/World" component={Wordl}  />
 
 
         </switch>
