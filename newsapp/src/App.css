@@ -1,48 +1,4 @@
 .App {
-    width: 100vw;
+    width: 100vw;	    
     height: 100vh;
-
 }
-
-@import url("https://fonts.google.com/specimen/Roboto+Slab?sidebar.open&selection.family=Roboto+Slab:wght@400;600;700");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-  
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: lightcyan;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.header {
-  font-size: 150px;
-  color: black;
-  font-weight: bold;
-  display: flex;
-  justify-items: center;
-}
-
-.US {
-  font-size: 90px;
-  font-weight: bold;
-  justify-content: center;
-}
-
-.World {
-  font-size: 90px;
-  font-weight: bold;
-
-}
-

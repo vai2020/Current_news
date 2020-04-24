@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-
-console.log(process.env.REACT_APP_Newsapp_API_KEY)
 import axios from "axios";
 import {BrowserRouter as Router, Switch,Route,Link} from "react-router-dom";
 import Header from "./components/Header";
