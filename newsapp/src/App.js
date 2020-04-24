@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from "axios";
-import {BrowserRouter as Router, Switch,Route,Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Us from "./components/Us";
@@ -30,31 +30,32 @@ import Footer from "./components/Footer";
 class App extends Component {
   render() {
       return (
-          
+          <Router>
          <div>
               <div> <Header /> </div>
-              <div> <Us /> </div>
+               
                <div> <World /> </div>
                <div> <Main /> </div>
                <div> <Comments /> </div>
                <div> <Footer /> </div>
 
         <nav>
-        <Link to="/US">US News</Link>
-        <Link to="/World">World News</Link>
+        <div><Link to="/Us">US News</Link></div>
+        <div><Link to="/World">World News</Link></div>
         <Link to="/Main">Main Content</Link>
         </nav>
 
-        <switch>
-        <Route path="/US" component={Us}  />
+        {/* <Switch>
+        <Route path="/Us" component={Us}  />
         <Route path="/World" component={World}  />
         <Route path="/Main" component={Main}  />
 
-        </switch>
+        </Switch> */}
+        </div>
+        </Router> 
 
 
-
-          </div>
+         
       )
   }
 
