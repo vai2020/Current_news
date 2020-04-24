@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import "./components/Shared/Button.js"
-import Button from "./components/Shared/Button";
 import axios from "axios";
 import Header from "./components/Header";
 import Main from "./components/Main";
@@ -32,7 +30,7 @@ class App extends Component {
   render() {
       return (
           <div>
-              <Button className={Header}><h1>{Header}</h1></Button>
+              <Header />
               <Main />
                <Us />
                <World />
