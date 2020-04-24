@@ -1,8 +1,11 @@
-* {
-  padding: 0;
+@import url("https://fonts.google.com/specimen/Roboto+Slab?sidebar.open&selection.family=Roboto+Slab:wght@400;600;700")
+*{
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+  
+
 
 
 body {
