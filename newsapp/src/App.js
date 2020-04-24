@@ -31,9 +31,10 @@ class App extends Component {
       return (
           <div>
               <div><Header /></div>
-              <Main />
+              
                <Us />
                <World />
+               <Main />
                <Comments />
                <Footer />
 
