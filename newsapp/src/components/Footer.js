@@ -5,7 +5,7 @@ function Footer () {
     return (
       <div>
         
-        <p className="footer"> Disclaimer: Powered by NewsAPI.org. Errors and omissions excepted.</p>
+        <p className="Footer"> Disclaimer: Powered by NewsAPI.org. Errors and omissions excepted.</p>
   
       </div>
     );

@@ -30,7 +30,8 @@ import Footer from "./components/Footer";
 class App extends Component {
   render() {
       return (
-          <div>
+          
+         <div></div>
               <div> <Header /> </div>
               <div> <Us /> </div>
                <div> <World /> </div>
@@ -39,15 +40,16 @@ class App extends Component {
                <div> <Footer /> </div>
 
         <nav>
-        <Link to="/">US News</Link>
-        <Link to="/">World News</Link>
-        <Link to="/">Main Content</Link>
-
-
-
-
-
+        <Link to="/US">US News</Link>
+        <Link to="/World">World News</Link>
+        <Link to="/Main">Main Content</Link>
         </nav>
+
+        <switch>
+        <Route path="US"
+
+
+        </switch>
 
 
 
