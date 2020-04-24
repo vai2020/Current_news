@@ -37,7 +37,7 @@ class App extends Component {
                <div> <Main /> </div>
                <div> <Comments /> </div>
                <div> <Footer /> </div>
-<div> testing today</div>
+<div> TGIF</div>
 
           </div>
       )
