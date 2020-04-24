@@ -6,6 +6,7 @@ function World () {
       <div>
         
         <p className="World"> World News</p>
+        <h1>This is a test</h1>
   
       </div>
     );

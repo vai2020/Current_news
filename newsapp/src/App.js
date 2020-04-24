@@ -31,23 +31,27 @@ class App extends Component {
   render() {
       return (
           <Router>
+        
          <div>
-              <div> <Header /> </div>
-               <div> <Comments /> </div>
-               <div> <Footer /> </div>
+              <div className="Header">Google News App</div>
+               
 
         <nav>
-        <div><Link to="/Us">US News</Link></div>
-        <div><Link to="/World">World News</Link></div>
-        <div><Link to="/Main">Main Content</Link></div>
+        <div className="US"><Link to="/Us">US News</Link></div>
+        <div className="World"><Link to="/World">World News</Link></div>
+        <div className="Main"><Link to="/Main">Main Content</Link></div>
         </nav>
 
-        {/* <Switch>
+        <div> <Comments /> </div>
+        <div> <Footer /> </div>
+
+
+        /*{ <Switch>
         <Route path="/Us" component={Us}  />
         <Route path="/World" component={World}  />
         <Route path="/Main" component={Main}  />
 
-        </Switch> */}
+        </Switch> } */
         </div>
         </Router> 
 

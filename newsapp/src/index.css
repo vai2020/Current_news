@@ -21,12 +21,13 @@ code {
     monospace;
 }
 
-.header {
+.Header {
+  position: absolute;
+  left: 40%;
   font-size: 150px;
   color: black;
-  font-weight: bold;
-  display: flex;
-  justify-items: center;
+  font-weight: bold;  
+
 }
 
 .US {
@@ -41,15 +42,15 @@ code {
 
 }
 
-.main{
+.Main {
   font-size: 90px;
   font-weight: bold;
 }
 
-.comments {
+.Comments {
   font-size: 70px;
 }
 
-.footer {
+.Footer {
   font-size: 20px;
 }
