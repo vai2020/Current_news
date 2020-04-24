@@ -41,6 +41,7 @@ class App extends Component {
         <nav>
         <Link to="/">US News</Link>
         <Link to="/">World News</Link>
+        <Link to="/">Main Content</Link>
 
 
 
