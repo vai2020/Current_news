@@ -33,16 +33,13 @@ class App extends Component {
           <Router>
          <div>
               <div> <Header /> </div>
-               
-               <div> <World /> </div>
-               <div> <Main /> </div>
                <div> <Comments /> </div>
                <div> <Footer /> </div>
 
         <nav>
         <div><Link to="/Us">US News</Link></div>
         <div><Link to="/World">World News</Link></div>
-        <Link to="/Main">Main Content</Link>
+        <div><Link to="/Main">Main Content</Link></div>
         </nav>
 
         {/* <Switch>
