@@ -31,7 +31,7 @@ class App extends Component {
   render() {
       return (
           
-         <div></div>
+         <div>
               <div> <Header /> </div>
               <div> <Us /> </div>
                <div> <World /> </div>
@@ -46,7 +46,7 @@ class App extends Component {
         </nav>
 
         <switch>
-        <Route path="US"
+        <Route path="/US" component={Us}  />
 
 
         </switch>
@@ -56,6 +56,7 @@ class App extends Component {
           </div>
       )
   }
+
 }
 
 
