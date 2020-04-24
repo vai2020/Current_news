@@ -33,7 +33,7 @@ class App extends Component {
               <div> <Header /> </div>
               <div> <Us /> </div>
                <div> <World /> </div>
-               <Main />
+               <div> <Main /> </div>
                <Comments />
                <Footer />
 
