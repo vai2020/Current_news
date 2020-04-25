@@ -6,7 +6,7 @@ function Main (props) {
       <div>
         
         <p className="main-item"> Main Content xxx</p>
-        <h1 className="final-name">{props.name}</h1>
+        <h1 className="final-name">Main content marker{props.name}</h1>
 
       </div>
     );
