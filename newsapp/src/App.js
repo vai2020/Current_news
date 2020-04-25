@@ -76,7 +76,11 @@ import Footer from "./components/Footer";
         </section>
         <h1> Name={this.state.name} </h1>
 
-       /*  <p>xxx{this.state.name.map((name, id) => <ul key={id}> <li key={id} >  {name.name}  </li> </ul> )}  </p>     */
+        {/* Line 81 is a test to try the map method
+       
+        <p>xxx{this.state.name.map((name, id) => <ul key={id}> <li key={id} >  {name.name}  </li> </ul> )}  </p>     
+         */}
+        
 
 
         <div className="lower-page">
