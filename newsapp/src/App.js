@@ -50,11 +50,11 @@ import Footer from "./components/Footer";
         async getNews() {
         try{
         let news=await axios.get(`https://newsapi.org/v2/sources?apiKey=${process.env.REACT_APP_Newsapp_API_KEY}`);              
-        console.log(news)
+       
         this.state({name: news.data})
         }
         catch(error){
-        console.log(error);
+        document.getElementById(error)
 }
 }
        
