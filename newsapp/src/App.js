@@ -43,18 +43,49 @@ import Footer from "./components/Footer";
             constructor(props){
                 super(props)
                 this.state={
-                name:[]
+                name:[],
+             country:[],
+                url:[],
+
+                usName:[],
+                usCountry:[],
+                   usUrl:[]
+
+              
                         }
                         }
 
         async getNews() {
         try{
-        let news=await axios.get(`https://newsapi.org/v2/sources?apiKey=${process.env.REACT_APP_Newsapp_API_KEY}`);              
-       
-        this.state({name: news.data})
-        }
+        // let news=await axios.get(`https://newsapi.org/v2/sources?apiKey=${process.env.REACT_APP_Newsapp_API_KEY}`);              
+        const response=await axios.get(`https://newsapi.org/v2/sources?apiKey=${process.env.REACT_APP_Newsapp_API_KEY}`);              
+        
+        console.log(response.data)
+        
+        // console.log(googleNews)
+        // console.log(response.data.sources)
+        // console.log(response.data.sources[0])
+        // console.log(response.data.sources[0].name)
+        const results=response.data.sources
+        const googleNews=results.filter(news => news.name.includes("Google News"))
+        console.log(googleNews)
+        console.log(googleNews.country)
+        const newsResult=googleNews.map(mainNews => <div>{mainNews.description}{mainNews.country}{mainNews.url}</div>)
+        console.log(newsResult)
+        const usNews=googleNews.filter(news => news.country.includes("us"))
+        console.log(usNews)
+        const usResult=usNews.map(mainNews => <div>{mainNews.description}{mainNews.country}{mainNews.url}</div>)
+        
+        
+        this.setState({name: newsResult})
+        this.setState({usName: usResult})
+      
+      }
+        
+
+
         catch(error){
-        document.getElementById(error)
+        console.log(error)
 }
 }
        
@@ -74,7 +105,9 @@ import Footer from "./components/Footer";
         <div className="Main"><Link to="/Main">Main Content</Link> </div>
         <div className="World"><Link to="/World">World News</Link></div>
         </section>
-        <h1> Name={this.state.name} </h1>
+        {/* <h1> {this.state.name} </h1> */}
+        <Main  name={this.state.name} country={this.state.country} url={this.state.url} /> 
+        <Us  name={this.state.usName} country={this.state.usCountry} url={this.state.usUrl} /> 
 
         {/* Line 81 is a test to try the map method
        

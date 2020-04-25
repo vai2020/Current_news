@@ -1,0 +1,11 @@
+.US {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    font-size: 90px;
+    font-weight: bold;
+    justify-content: center;
+  }
+  
+  

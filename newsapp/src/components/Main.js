@@ -1,12 +1,15 @@
 import React from 'react';
+import "../styles/Main.css";
 
 
 function Main (props) {
     return (
-      <div>
+      <div className="main-news">
         
-        <p className="main-item"> Main Content xxx</p>
-        <h1 className="final-name">Main content marker{props.name}</h1>
+        
+      <h1 className="final-name"> {props.country} </h1>
+      <p className="main-item"> {props.name} </p>
+      <p className="main-item"> {props.url }</p>
 
       </div>
     );
