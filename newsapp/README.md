@@ -32,6 +32,7 @@ App.js is stateful because it has to make an API call and then render the info f
 
 
 
+https://user-images.githubusercontent.com/61802741/79992113-b375b880-8478-11ea-8ce2-8a8b3125aaf8.png
 
 
   
