@@ -1,4 +1,91 @@
-.App {
+/* .App {
     width: 100vw;	    
     height: 100vh;
+} */
+
+@import url("https://fonts.google.com/specimen/Roboto+Slab?sidebar.open&selection.family=Roboto+Slab:wght@400;600;700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+.Header {
+    margin-top: 0.25in;
+    position: relative;
+    left: 40%;
+    font-size: 150px;
+    color: black;
+    font-weight: bold;  
+  
+  }
+  
+  
+  .US {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    font-size: 90px;
+    font-weight: bold;
+    justify-content: center;
+  }
+  
+  
+  
+  .World {
+    display: flex;
+    margin-top: 10%;
+    flex-direction: row;
+    font-size: 90px;
+    font-weight: bold;
+  
+  }
+  
+  .Main {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 90px;
+    font-weight: bold;
+  }
+  
+  .main-item {
+    display: absolute;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 9%;
+    font-size: 70px;
+    
+  }
+  
+  .final-name {
+    display: absolute;
+    flex-direction: row;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-size: 60px;
+  }
+  
+  .lower-page {
+    display: absolute;
+    margin: 60%;
+  }
+  
+  .Comments {
+    display: flex;
+    top: 800px;
+    /* position: absolute; */
+    font-size: 70px;
+    align-items: center;
+  }
+  
+  .Footer {
+    display: absolute;
+    font-size: 20px;
+  }
