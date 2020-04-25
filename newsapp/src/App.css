@@ -20,7 +20,12 @@ body {
     background-color: lightcyan;
   }
 
-
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  }
 
 .Header {
     margin-top: 0.25in;
@@ -51,7 +56,7 @@ body {
     flex-direction: row;
     font-size: 90px;
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 10%;
   
   }
   
