@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Us from "./components/Us";
-import World from "./components/World"
+import Thank from "./components/Thank";
 import Comments from "./components/Comments";
 import Footer from "./components/Footer";
 
@@ -60,7 +60,7 @@ import Footer from "./components/Footer";
         // let news=await axios.get(`https://newsapi.org/v2/sources?apiKey=${process.env.REACT_APP_Newsapp_API_KEY}`);              
         const response=await axios.get(`https://newsapi.org/v2/sources?apiKey=${process.env.REACT_APP_Newsapp_API_KEY}`);              
         
-        console.log(response.data)
+        // console.log(response.data)
         
         // console.log(googleNews)
         // console.log(response.data.sources)
@@ -68,12 +68,12 @@ import Footer from "./components/Footer";
         // console.log(response.data.sources[0].name)
         const results=response.data.sources
         const googleNews=results.filter(news => news.name.includes("Google News"))
-        console.log(googleNews)
-        console.log(googleNews.country)
+        // console.log(googleNews)
+        // console.log(googleNews.country)
         const newsResult=googleNews.map(mainNews => <div>{mainNews.description}{mainNews.country}{mainNews.url}</div>)
-        console.log(newsResult)
+        // console.log(newsResult)
         const usNews=googleNews.filter(news => news.country.includes("us"))
-        console.log(usNews)
+        // console.log(usNews)
         const usResult=usNews.map(mainNews => <div>{mainNews.description}{mainNews.country}{mainNews.url}</div>)
         
         
@@ -101,10 +101,20 @@ import Footer from "./components/Footer";
               <div className="Header">Google News App</div>            
         
         <section>
+         
         <div className="US"><Link to="/Us">US News</Link>  </div>
         <div className="Main"><Link to="/Main">Main Content</Link> </div>
-        <div className="World"><Link to="/World">World News</Link></div>
+        {/* <div className="World"><Link to="/World">World News</Link></div> */}
+         
         </section>
+
+        <Switch>
+        <Route path="/Us" component={Us}  />
+        {/* <Route path="/World" component={World}  /> */}
+        <Route path="/Main" component={Main} />
+
+        </Switch> 
+
         {/* <h1> {this.state.name} </h1> */}
         <Main  name={this.state.name} country={this.state.country} url={this.state.url} /> 
         <Us  name={this.state.usName} country={this.state.usCountry} url={this.state.usUrl} /> 
@@ -117,16 +127,15 @@ import Footer from "./components/Footer";
 
 
         <div className="lower-page">
+        <div> <Thank  /></div>
         <div> <Comments /> </div>
         <div> <Footer /> </div>
         </div>
 
-        <Switch>
-        <Route path="/Us" component={Us}  />
-        <Route path="/World" component={World}  />
-        <Route path="/Main" component={Main} />
+         
 
-        </Switch> 
+
+        
 
 
         </div>

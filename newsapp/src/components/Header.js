@@ -18,7 +18,7 @@ import React from 'react';
         return (
             <div>
                 
-                <h1 className="header"> Google News App</h1>
+                <h1 className="Header"> Google News App</h1>
   
             </div>
         )
