@@ -1,20 +1,30 @@
 
- .Main {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+  .main-news {
+    display: inline-block;
     margin-top: 10%;
-    font-size: 90px;
+    font-size: 80px;
+    justify-items: left;
     font-weight: bold;
-    margin-right: 10%;
   }
   
-  .main-item {
-    /* display: absolute;
-    flex-direction: row; */
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 9%;
-    font-size: 70px;
+  
+  .main-country {
+      display: block;
+      font-size: 60px;
+      align-items: left;
+    }
+  
+    .main-name {
+      display: block;
+      font-size: 60px;
+      align-items: left;
+    }
+  
+    .main-url {
+      display: block;
+      font-size: 60px;
+      align-items: left;
+    }
+  
     
-  }
+    

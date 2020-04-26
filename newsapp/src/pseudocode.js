@@ -1,6 +1,6 @@
-// import App from "./App"
 
 // Pseudocode:
+// Note: Wireframe was revised due to the fact that original World news is the same as Main content news
 // 1) npx create-react-app to start the newsapp
 // 2) npm install axios
 // 3) npm install --save react-router-dom

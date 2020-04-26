@@ -4,12 +4,11 @@ import "../styles/Main.css";
 
 function Main (props) {
     return (
-      <div className="main-news">
-        
-        
-      <h1 className="final-name"> {props.country} </h1>
-      <p className="main-item"> {props.name} </p>
-      <p className="main-item"> {props.url }</p>
+      <div>
+      <h1 className="main-news"> Main Content</h1>
+      <p className="main-country"> {props.country} </p>
+      <p className="main-name"> {props.name} </p>
+      <p className="main-url"> {props.url }</p>
 
       </div>
     );

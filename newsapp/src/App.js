@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Us from "./components/Us";
 import Thank from "./components/Thank";
-import Comments from "./components/Comments";
+import Feedback from "./components/Feedback";
 import Footer from "./components/Footer";
 
 /* Using the functional component to test
@@ -45,11 +45,11 @@ import Footer from "./components/Footer";
                 this.state={
                 name:[],
              country:[],
-                url:[],
+                 url:[],
 
-                usName:[],
-                usCountry:[],
-                   usUrl:[]
+              usName:[],
+           usCountry:[],
+               usUrl:[]
 
               
                         }
@@ -75,11 +75,12 @@ import Footer from "./components/Footer";
         const usNews=googleNews.filter(news => news.country.includes("us"))
         // console.log(usNews)
         const usResult=usNews.map(mainNews => <div>{mainNews.description}{mainNews.country}{mainNews.url}</div>)
+  
         
         
         this.setState({name: newsResult})
         this.setState({usName: usResult})
-      
+        // this.setState({usName: usNews})
       }
         
 
@@ -94,48 +95,43 @@ import Footer from "./components/Footer";
        }  
            
         render() {
-      return (
+        return (
+          
           <Router>
-        
-         <div>
+{/*         
+         <div> */}
               <div className="Header"><Header  /></div>            
         
-        <section>
-         
-        <div className="US"><Link to="/Us">US News</Link>  </div>
-        <div className="Main"><Link to="/Main">Main Content</Link> </div>
-        {/* <div className="World"><Link to="/World">World News</Link></div> */}
-         
-        </section>
+        {/* <section> */}
+         <nav>
+        <Link to="/Us">  </Link> 
+        <Link to="/Main">  </Link>
+        <Link to="/Feedback">  </Link>
+        </nav>
+        {/* </section> */}
 
         <Switch>
-        <Route path="/Us" component={Us}  />
-        {/* <Route path="/World" component={World}  /> */}
-        <Route path="/Main" component={Main} />
+        <Route path="/Us" component={Us} />
+        <Route path="/Main" exact component={Main} />
+        <Route path="/Feedback" component={Feedback} />
 
         </Switch> 
 
-        {/* <h1> {this.state.name} </h1> */}
-        <Main  name={this.state.name} country={this.state.country} url={this.state.url} /> 
-        <Us  name={this.state.usName} country={this.state.usCountry} url={this.state.usUrl} /> 
+          {/* <h1> {this.state.name} </h1>   */}
+        <Main name={this.state.name}country={this.state.country} url={this.state.url} /> 
+        <Us name={this.state.usName}country={this.state.usCountry} url={this.state.usUrl} /> 
 
         {/* Line 81 is a test to try the map method
        
         <p>xxx{this.state.name.map((name, id) => <ul key={id}> <li key={id} >  {name.name}  </li> </ul> )}  </p>     
-         */}
-        
+         */}   
 
-
-        <div className="lower-page">
         <div> <Thank  /></div>
-        <div> <Comments /> </div>
+        {/* <div> <Feedback /> </div> */}
         <div> <Footer /> </div>
-        </div>
-        
-        </div>
+                
+        {/* </div> */}
         </Router> 
-
-      
          
       )
   }
