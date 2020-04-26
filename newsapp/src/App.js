@@ -98,7 +98,7 @@ import Footer from "./components/Footer";
           <Router>
         
          <div>
-              <div className="Header">Google News App</div>            
+              <div className="Header"><Header  /></div>            
         
         <section>
          
@@ -131,13 +131,7 @@ import Footer from "./components/Footer";
         <div> <Comments /> </div>
         <div> <Footer /> </div>
         </div>
-
-         
-
-
         
-
-
         </div>
         </Router> 
 

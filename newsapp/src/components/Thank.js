@@ -1,12 +1,12 @@
 import React from 'react';
-
+import "../styles/Thank.css";
 
 function Thank () {
     return (
       <div>
         
-        <p className="thank-you"> Thank you</p>
-        <h1>This is a Marker for Thank xxxx</h1>
+        <p className="thank-you"> Thank you for visiting Google News App</p>
+        
   
       </div>
     );
