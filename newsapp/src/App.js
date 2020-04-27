@@ -70,10 +70,17 @@ import Footer from "./components/Footer";
         const googleNews=results.filter(news => news.name.includes("Google News"))
         // console.log(googleNews)
         // console.log(googleNews.country)
+   
+   
+        //the following function used the map method - array.map(function(currentValue(Req),index(Opt), arr(Opt))) thisValue) to return googleNews' description, country and url for both us and international news//
         const newsResult=googleNews.map(mainNews => <div>{mainNews.description}{mainNews.country}{mainNews.url}</div>)
         // console.log(newsResult)
+
+        //the following function used the filter method - array.filter(function(currentValue(Req), index(Opt), arr(Opt)), thisValue) to inclue googleNews that contains "us" in its country code
         const usNews=googleNews.filter(news => news.country.includes("us"))
         // console.log(usNews)
+
+        //the following function used the map method to return us only googleNews 
         const usResult=usNews.map(mainNews => <div>{mainNews.description}{mainNews.country}{mainNews.url}</div>)
   
         
@@ -83,10 +90,11 @@ import Footer from "./components/Footer";
  
       }
         
-
+        //using try and catch error statements within this block to catch and handle errors
 
         catch(error){
-        console.log(error)
+        // console.log(error)
+        document.getElementById("error").innerHTML = error;
 }
 }
        
@@ -133,32 +141,8 @@ import Footer from "./components/Footer";
 
 }
 
-
-
-
 export default App;
 
 
 
 
-// {/* <Route path="/Main" component={Main}>  
-//         <Main name={this.state.name}> </Main> */}
-
-
-// https://pokeapi.co/api/v2/pokemon/pikachu
-
-
-/* <div><Link to="/Main">  </Link></div>
-<div><Link to="/Us">  </Link></div>
-<div><Link to="/Feedback">  </Link></div>
-
-
-<Switch>
-        <Route path="/Us" component={Us} />   
-        <Route path="/Feedback" component={Feedback} />
-        <Route path="/Main" exact component={Main} />
-        </Switch> 
-
-
-
- */

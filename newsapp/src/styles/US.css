@@ -1,5 +1,4 @@
 .us-news {
- 
   display: flex;
   margin-top: 10%;
   font-size: 80px;
@@ -9,21 +8,18 @@
 
 
 .us-country {
-    
     display: flex;
     font-size: 60px;
     justify-content: left;
   }
 
   .us-name {
-   
     display: flex;
     font-size: 60px;
     justify-content: left;
   }
 
   .us-url {
-   
     display: flex;
     font-size: 60px;
     justify-content: left;
