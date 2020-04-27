@@ -78,9 +78,9 @@ import Footer from "./components/Footer";
   
         
         
-        this.setState({name: newsResult})
-        this.setState({usName: usResult})
-        // this.setState({usName: usNews})
+        // this.setState({name: newsResult})
+        // this.setState({usName: usResult})
+ 
       }
         
 
@@ -98,39 +98,34 @@ import Footer from "./components/Footer";
         return (
           
           <Router>
-{/*         
-         <div> */}
-              <div className="Header"><Header  /></div>            
         
-        {/* <section> */}
-         <nav>
-        <Link to="/Us">  </Link> 
-        <Link to="/Main">  </Link>
-        <Link to="/Feedback">  </Link>
-        </nav>
-        {/* </section> */}
+              <div className="App">
+              <div className="Header"><Header  />  </div>       
+        
+        <section className="navigator">
+         
+        <div><Link to="/Main">Main Content</Link></div>
+        <div><Link to="/US">US News</Link></div>
+        <div><Link to="/Feedback">Feedback</Link></div>
+       
+        </section>       
 
         <Switch>
-        <Route path="/Us" component={Us} />
-        <Route path="/Main" exact component={Main} />
-        <Route path="/Feedback" component={Feedback} />
+        <Route path="/Main" component={Main}  />
+        <Route path="/US" component={Us}  />
+        <Route path="/Feedback" component={Feedback}  />
+        </Switch>	       
 
-        </Switch> 
-
-          {/* <h1> {this.state.name} </h1>   */}
-        <Main name={this.state.name}country={this.state.country} url={this.state.url} /> 
-        <Us name={this.state.usName}country={this.state.usCountry} url={this.state.usUrl} /> 
-
-        {/* Line 81 is a test to try the map method
        
-        <p>xxx{this.state.name.map((name, id) => <ul key={id}> <li key={id} >  {name.name}  </li> </ul> )}  </p>     
-         */}   
+          {/* <h1> {this.state.name} </h1>   */}
+        {/* <Main name={this.state.name}country={this.state.country} url={this.state.url} /> 
+        <Us name={this.state.usName}country={this.state.usCountry} url={this.state.usUrl} />  */}
 
-        <div> <Thank  /></div>
         {/* <div> <Feedback /> </div> */}
+        <div> <Thank  /></div>  
         <div> <Footer /> </div>
                 
-        {/* </div> */}
+        </div>
         </Router> 
          
       )
@@ -153,5 +148,17 @@ export default App;
 // https://pokeapi.co/api/v2/pokemon/pikachu
 
 
+/* <div><Link to="/Main">  </Link></div>
+<div><Link to="/Us">  </Link></div>
+<div><Link to="/Feedback">  </Link></div>
 
 
+<Switch>
+        <Route path="/Us" component={Us} />   
+        <Route path="/Feedback" component={Feedback} />
+        <Route path="/Main" exact component={Main} />
+        </Switch> 
+
+
+
+ */

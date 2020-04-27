@@ -9,6 +9,7 @@ function Main (props) {
       <p className="main-country"> {props.country} </p>
       <p className="main-name"> {props.name} </p>
       <p className="main-url"> {props.url }</p>
+    
 
       </div>
     );

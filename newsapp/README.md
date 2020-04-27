@@ -1,5 +1,7 @@
 Mod 2 Project: Newsapp 
 
+***Wireframe revised due to new findings: World News and Main News being the same.  Therefore, I changed the third route to be the Feedback.  First and second wireframes can be found under issues on Github
+
 Which 3rd party API I'm using:
 https://newsapi.org
 
@@ -12,6 +14,7 @@ Anyone who wants to get access to latest news from an app. For example: people w
 
 Wireframe:
 2 Stateful components 5 Functional components (presentational components / no stateful logic)
+(Please see issues for wireframes)
 
 2 Class components (staeful):
 1) App.js
@@ -31,8 +34,8 @@ App.js is stateful because it has to make an API call and then render the info f
 ![wireframe](./Images/wireframe.png) -->
 
 
-Note: revised wireframe image under issues on github
-https://user-images.githubusercontent.com/61802741/79992113-b375b880-8478-11ea-8ce2-8a8b3125aaf8.png
+Note: revised wireframe image under issues on github:
+https://github.com/vai2020/Current_news/issues/2
 
 
   
